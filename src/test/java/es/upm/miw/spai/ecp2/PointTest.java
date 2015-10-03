@@ -19,6 +19,14 @@ public class PointTest {
 		 assertEquals(2, pt.getX());
 	     assertEquals(5, pt.getY());
 	}
+	
+	@Test 
+	public void setPointIntInt(){
+		pt.setX(1);
+		pt.setY(3);
+		assertEquals(1, pt.getX());
+		assertEquals(3, pt.getY());
+	}
 
 	@Test
 	public void testPointInt() {
