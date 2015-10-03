@@ -22,6 +22,11 @@ public class UserTest {
 	}
 
 	@Test
+	public void testshortName(){
+		assertEquals("L C",usr.shortName());
+	}
+	
+	@Test
 	public void testGetNumber() {
 		assertEquals(29, usr.getNumber());
 	}

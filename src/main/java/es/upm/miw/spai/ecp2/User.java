@@ -17,6 +17,10 @@ public class User {
         this.name = this.format(name);
         this.familyName = this.format(familyName);
     }
+    
+    public String shortName(){
+    	return this.name.substring(0, 1) + " " + this.familyName.substring(0, 1);
+    }
 
     public int getNumber() {
         return this.number;
