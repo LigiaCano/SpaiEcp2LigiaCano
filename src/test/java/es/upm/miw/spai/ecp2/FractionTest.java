@@ -39,5 +39,10 @@ public class FractionTest {
 	public void testDecimal() {
 		assertEquals(0.5, fr.decimal(),10e-5);
 	}
+	
+	@Test
+	public void testIsGreater() {
+	    assertEquals(true, fr.isGreater(new Fraction(1, 3)));
+	}
 
 }
