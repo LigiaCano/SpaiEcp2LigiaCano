@@ -50,5 +50,10 @@ public class UserTest {
 	public void testInitials() {
 		 assertEquals("L.", usr.initials());
 	}
+	
+	@Test
+    public void testNameUpper() {
+         assertEquals("LIGIA", usr.nameUpper());
+    }
 
 }
