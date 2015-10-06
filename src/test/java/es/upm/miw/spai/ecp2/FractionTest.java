@@ -54,5 +54,10 @@ public class FractionTest {
 	public void testIsGreater() {
 	    assertEquals(true, fr.isGreater(new Fraction(1, 3)));
 	}
+	
+	@Test
+	public void testIsImproper(){
+		assertFalse(fr.isImproper());
+	}
 
 }
