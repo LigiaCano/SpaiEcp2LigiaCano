@@ -4,44 +4,53 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DecimalCollection {
-    private List<Double> collection;
+	private List<Double> collection;
 
-    public DecimalCollection() {
-        this.collection = new ArrayList<Double>();
-    } 
+	public DecimalCollection() {
+		this.collection = new ArrayList<Double>();
+	}
 
-    public void add(double value) {
-        this.collection.add(value);
-    }
+	public void add(double value) {
+		this.collection.add(value);
+	}
 
-    public int size() {
-        return this.collection.size();
-    }
+	public int size() {
+		return this.collection.size();
+	}
 
-    public double sum() {
-        double sum = 0;
-        for (double item : this.collection) {
-            sum += item;
-        }
-        return sum;
-    }
+	public double sum() {
+		double sum = 0;
+		for (double item : this.collection) {
+			sum += item;
+		}
+		return sum;
+	}
 
-    public double higher() {
-        double higher = Double.NEGATIVE_INFINITY;
-        for (double item : this.collection) {
-            if (item > higher)
-                higher = item;
-        }
-        return higher;
-    }
-    
-    public double average() {
-        double average = 0.0;
-        for (Double number : this.collection) {
-            average += number;
-        }
-        average = average / this.collection.size();
-        return average;
-    }
+	public double higher() {
+		double higher = Double.NEGATIVE_INFINITY;
+		for (double item : this.collection) {
+			if (item > higher)
+				higher = item;
+		}
+		return higher;
+	}
+
+	public double average() {
+		double average = 0.0;
+		for (Double number : this.collection) {
+			average += number;
+		}
+		average = average / this.collection.size();
+		return average;
+	}
+
+	public double lower() {
+		double lower = Double.POSITIVE_INFINITY;
+		for (double item : this.collection) {
+			if (item < lower)
+				lower = item;
+		}
+		return lower;
+	}
 
 }
