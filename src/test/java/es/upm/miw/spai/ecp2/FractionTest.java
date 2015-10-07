@@ -36,13 +36,13 @@ public class FractionTest {
 	}
 	
 	@Test
-	public void testIsPropia(){
-		assertTrue(fr.isPropia());
+	public void testIsProper(){
+		assertTrue(fr.isProper());
 	}
 	
 	@Test
-	public void testIsImpropia(){
-		assertFalse(!fr.isPropia());
+	public void testIsNotProper(){
+		assertFalse(!fr.isProper());
 	}
 
 	@Test
